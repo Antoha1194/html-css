@@ -124,6 +124,7 @@ body {
     margin-left: 100px;
     width: 430px;
     height: 245px;
+    outline: none;
   }
   
   .dignity{
@@ -305,7 +306,7 @@ body {
 
   .reviews-content{
     background-color: #ecebec;
-    padding: 0 20px 16px;
+    padding: 16px;
     width: 81.73913043478261%;
     box-sizing: border-box;
     position: relative;
@@ -330,7 +331,7 @@ body {
     font-style: italic;
     color: #333333;
     word-break: break-all;
-    margin: 16px 0;
+    margin: 0 10px 0 0;
     
   }
   .reviews-content-autor{
@@ -364,17 +365,19 @@ body {
     background-color: #445163;
     border-radius: 5px;
     margin: 0 45px;
+    width: 300px;
+    padding: 0 0 20px 0;
+    box-sizing: border-box;
 
   }
   .buy-card:nth-child(2),
   .buy-card:last-child{
     margin: 0;
   }
-  .buy-card-header{
-    padding: 16px 0 0 0;
-  }
   .buy-card-header-heading{
-    margin: 0 0 16px 0;
+    margin: 0;
+    padding: 16px;
+    box-sizing: border-box;
     text-align: center;
     font-family: Arial;
     font-size: 24px;
@@ -395,7 +398,10 @@ body {
     background-color: #fff;
   }
   .buy-card-list{
-    margin: 20px;
+    margin: 10px 0 0 0;
+    padding: 0 0 0 20px;
+    box-sizing: border-box;
+    list-style-position: inside;
   }
   .buy-card-list-item{
     font-family: Arial;
@@ -406,7 +412,6 @@ body {
   }
 
   .buy-card-btn{
-    margin:14px 20px 20px;
     display: block;
     padding: 14px;
     background-color: #ffffff;
@@ -419,7 +424,17 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     border-radius: 5px;
+    margin: 14px auto 0 auto;
+    width: 260px;
+    box-sizing: border-box;
 
+  }
+
+  .buy-card-btn:hover{
+    background-color: #f1f0f0;
+  }
+  .buy-card-btn:active{
+    background-color: #ffff;
   }
   .contacts{
     padding: 53px 0 0 0;
@@ -443,6 +458,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 500px;
+    margin: 0 0 50px 0;
 
   }
   .contacts-form-input{
@@ -457,7 +473,14 @@ body {
     font-weight: 400;
     color: #445162;
     border: none;
+
   }
+  .contacts-form-input,
+  .contacts-form-texarea,
+  .contacts-form-buttom{
+    outline: none;
+  }
+
   .contacts-form-texarea{
     min-height: 140px;
     resize: none;
@@ -476,13 +499,22 @@ body {
     padding: 14px 0;
     text-align: center;
     width: 140px;
-    margin: 21px auto 49px;
+    margin: 21px auto 0;
     font-family: Arial;
     font-size: 16px;
     line-height: 16px;
     font-weight: 700;
     text-transform: uppercase;
     color: #445162;
+    background-color: #ffff;
+    
+
+  }
+  .contacts-form-buttom:hover{
+    background-color: #f1f0f0;
+  }
+  .contacts-form-buttom:active{
+    background-color: #ffff;
   }
   .contacts-vertical{
     margin: 0;
